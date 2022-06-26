@@ -1,0 +1,233 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration-line: none;
+}
+
+body {
+    margin: 0px;
+    padding-top: 88px;
+}
+
+.saw {
+    color: yellowgreen;
+}
+
+.screen {
+    max-width: 768px;
+}
+
+.scroll-container{
+    scroll-behavior: smooth;
+}
+
+.title_wrap {
+    box-sizing: initial;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+header{
+    height: 55px;
+    padding: 1rem;
+    color: white;
+    background: #1C658C;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu span {
+    padding-left: 30px;
+}
+
+.title_img {
+    display: block;
+    margin: 10px;
+    float: center;
+    padding-left: auto;
+}
+
+#grid {
+    display: grid;
+    scroll-behavior: smooth;
+    min-height: 50vh;
+}
+
+#grid h1 {
+    padding: 30px;
+    padding-bottom: 15px;
+    padding-left: 355px;
+}
+
+#grid #article1 {
+    background-color: #EEEE;
+    padding-bottom: 45px;
+}
+
+#grid #about_me_table {
+    border: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 700px;
+    font-size: 16pt;
+}
+
+#grid #article2 {
+    background-color: #D8D2CB;
+    padding-bottom: 100px;
+}
+
+#grid #article3 {
+    background-color: #F7F5F2;
+    padding-bottom: 45px;
+}
+
+.skill_box div {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.skill_box div {
+    float: left;
+    width: 32%;
+    background: #fff;
+    padding: 0 20px;
+    margin-right: 2%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.skill_box h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1C658C;
+    line-height: 25px;
+}
+.skill_box ul {
+    width: 100%;
+    font-size: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+.skill_box li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.skill_box img {
+    display: block;
+    width: 70%;
+}
+
+.skill_box2 div {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.skill_box2 div {
+    float: center;
+    width: 32%;
+    background: #fff;
+    padding: 0 20px;
+    margin-right: 2%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.skill_box2 h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1C658C;
+    line-height: 25px;
+}
+.skill_box2 ul {
+    width: 100%;
+    font-size: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+.skill_box2 li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.skill_box2 img {
+    display: block;
+    width: 70%;
+}
+
+
+.article3_img{
+    padding-left: 0px;
+}
+
+.project_intro{
+    margin: 0px;
+}
+.project_title{
+    padding: 0 5%;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+.projact_text{
+    padding: 6% 5%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#grid #article4 {
+    background-color: #398AB9;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    font-size: small;
+    color: white;
+}
+.github img{
+    float: center;
+}
+
+@media(max-width:800px) {
+    #grid {
+        display: block;
+    }
+
+    ol {
+        border-right: none;
+    }
+
+    h1 {
+        border-bottom: none;
+    }
+}
