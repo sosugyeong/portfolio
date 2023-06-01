@@ -1,0 +1,75 @@
+.article1{
+    padding: 100px 0;
+    transition: all 0.3 ease;
+	background-color: #fff;
+}
+
+.article1 .about-content{
+    margin-bottom: 100px;
+}
+
+.about-content .aDesc {
+	overflow: hidden;
+}
+
+.about-content .aDesc .about{
+	float: left; 
+	margin-top: 3%; 
+	line-height: 1; 
+	font-weight: 300;
+}
+
+.about-content .aDesc .about h4 {
+	padding-bottom: 5%; 
+	font-size: 2.188em; 
+	letter-spacing: -1px; 
+	font-weight: 900; 
+	text-transform: uppercase;
+}
+
+.about-content .aDesc .about ul {
+	float: left; 
+	font-size: 1.5em;
+	list-style: none;
+}
+
+.about-content .aDesc .about ul li {
+	margin-bottom: 20px; 
+	line-height: 1.2; 
+}
+
+.about-content .aDesc .profile {
+	width: 40%;
+}
+
+.about-content .aDesc .profile ul.pro1 {
+	width: 30%;
+}
+
+.about-content .aDesc .profile ul.pro2 {
+	width: 70%;
+}
+
+.about-content .aDesc .history {
+	width: 60%;
+}
+
+.about-content .aDesc .history ul.his1 {
+	width: 34%;
+}
+
+.about-content .aDesc .history ul.his1 li:nth-of-type(4) {
+	margin-top: 18%;
+}
+
+.about-content .aDesc .history ul.his2 {
+	width: 66%;
+}
+
+.about-content img{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+	padding-top: 10%;
+}

@@ -2,128 +2,232 @@
 <html>
 
 <head>
-    <title>2001091소수경</title>
+    <title>소수경 웹 포트폴리오</title>
+    <!--폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Raleway:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Cabin&family=Nanum+Gothic&family=Noto+Serif+KR:wght@300&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zilla+Slab:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
+    <!--css링크-->
+    <link rel="stylesheet" href="article1_about.css" />
+    <link rel="stylesheet" href="article2_skills.css" />
+    <link rel="stylesheet" href="article3_project.css" />
     <link rel="stylesheet" href="portfolioStyle.css" />
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="house2.js"></script>
+    <script src="app.js"></script>
+    <script src="maptest.js"></script>
+    <!--<script src="jvscrt.js"></script>-->
+    <!--google map api-->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-J3lmrZLEJbD97JiU6MMx0f0XnF4V9YE&callback=initMap">
+    </script>
 </head>
 
 <body>
     <header>
         <h3>
-            sosugyeong
+            SoSuGyeong
         </h3>
         <nav>
             <div id="menu">
-            <span><a href="#scroll1">자기소개</a></span>
-            <span><a href="#scroll2">기술</a></span>
-            <span><a href="#scroll3">프로젝트</a></span>
-            </grid>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#about">About</a></span>
+                <span><a href="#skills">Skills</a></span>
+                <span><a href="#projects">Projects</a></span>
+                <span><a href="login.html">로그인</a></span>
+            </div>
         </nav>
     </header>
 
-    <div class="container mx-auto screeen">
-        <div id="grid">
-            <div id="article1">
-                <div class="title_wrap">
-                    <span class="title">
-                        <a id="scroll1">about me</a>
-                    </span>
-                </div>
-                <div id="about_me_table">
-                    <table>
-                        <tr height="50">
-                            <td rowspan="4"><img src="insertimagehere.png" width="130" height="130"></td>
-                            <td>이름</td>
-                            <td>소수경</td>
-                        </tr>
-                        <tr height="50">
-                            <td>생년월일</td>
-                            <td>1999.11.15</td>
-                        </tr>
-                        <tr height="50">
-                            <td>학교</td>
-                            <td>군산대학교 3학년 재학중</td>
-                        </tr>
-                        <tr height="50">
-                            <td>소개</td>
-                            <td>자신에 대한 소개글</td>
-                        </tr>
-                    </table>
-                </div>
+    <div class="grid0">
+        <div class="article0">
+            <div class="home_wrap" id="home">
             </div>
-            <div id="article2">
-                <div class="title_wrap">
-                    <span class="title">
-                        <a id="scroll1">skill</a>
-                    </span>
-                </div>
-                <div class="article3_img">
-                    <div class="skill_box">
-                        <div>
-                            <h2>Front-end</h2> 
-                            <ul>
-                                <li>
-                                    <img src="htmlcss.png">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="skill_box2">
-                        <div>
-                            <h2>Back-end</h2> 
-                            <ul>
-                                <li>
-                                    <img src="insertimagehere.png">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="article3">
-                <div class="title_wrap">
-                    <span class="title">
-                        <a id="scroll1">projects</a>
-                    </span>
-                </div>
-                <div class="title_img">
-                    <img src="insertimagehere.png" width="30%">
-                </div>
-                <div class="'project">
-                    <div class="project_intro" ">
-                        <div class="project_title">
-                            <span class="title">01. 프로젝트 제목</span>
-                        </div>
-                        <div class="project_text">
-                            <p>
-                                프로젝트에 대한 간단한 설명<br />
-                            </p>
-                            <p>
-                                <span>참여 인원 : </span>n 명<br />
-                                <span>개발 기간 : </span>mm.dd ~ mm.dd<br />
-                            </p>
-                            <p>
-                                <span>사용한 기술</span><br />
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="article4">
-                <div id="github">
-                    <a href="https://github.com/sosugyeong/portfolio"><img src="GitHub.png" width="3%"></a>
-                </div>
-                <br>
-                <br>
-                <span>
-                    Copyright(c) SoSuGyeong. All rights reserved.
-                </span>
+            <div class="Text">
+                <br><br><br><p>안녕하세요</p><br>
+                <p>소수경의 포트폴리오 입니다</p>
             </div>
         </div>
     </div>
-</body>
+    <div class="grid1">
+        <div class="article1">
+            <div class="title_wrap" id="about">
+                <span class="title">
+                    <p>About Me</p>
+                </span>
+                <div class='about-content'>
+                    <img src="image/shd.png">
+                    <div class="aDesc">
+                        <div class="about profile">
+                            <h4>profile</h4>
+                            <ul class="pro1">
+                                <li>이름</li>
+                                <li>생년월일</li>
+                                <li>주소</li>
+                                <li>연락처</li>
+                                <li>메일</li>
+                            </ul>
+                            <ul class="pro2">
+                                <li>소수경</li>
+                                <li>1999. 11. 15</li>
+                                <li>전주시 </li>
+                                <li>010-2721-5202</li>
+                                <li>sosugyeongg@gmail.com</li>
+                            </ul>
+                        </div>
 
+                        <div class="about history">
+                            <h4>history</h4>
+                            <ul class="his1">
+                                <li><i>20</i>20. 03 - <i>20</i>2X. XX</li>
+                            </ul>
+                            <ul class="his2">
+                                <li>군산대 컴퓨터정보공학과 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid2">
+        <div class="article2">
+            <div class="title_wrap" id="skills">
+                <span class="title">
+                    <p>Skills</p>
+                </span>
+            </div>
+            <div class="article3_img">
+                <div class="skill_box">
+                    <div>
+                        <h2>FrontEnd</h2>
+                        <ul>
+                            <li>
+                                <img src="image/htmlcss.png">
+                                <img src="image/JavaScript.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_box2">
+                    <div>
+                        <h2>Server</h2>
+                        <ul>
+                            <li>
+                                <img src="image/nodejs.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_box2">
+                    <div>
+                        <h2>DB</h2>
+                        <ul>
+                            <li>
+                                <img src="image/insertimagehere.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid3">
+        <section id="article3">
+            <div class="title_wrap" id="projects">
+                <span class="title">
+                    <p>Projects</p>
+                </span>
+            </div>
+            <div class="project">
+                <div id="slider">
+                    <div class="slide">
+                        <div class="workCom"><img src="image/insertimagehere.png"></div>
+                        <div class="workTxt">
+                            <p class="wnumber">01</p>
+                            <p class="wtitle">제목</p>
+                            <p class="wdesc">설명</p>
+                            <p class="wprd">기한: XX.XX.XX - XX.XX.XX</p>
+                            <p class="wmore">바로가기</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="workCom"><img src="image/insertimagehere.png"></div>
+                        <div class="workTxt">
+                            <p class="wnumber">02</p>
+                            <p class="wtitle">제목</p>
+                            <p class="wdesc">설명</p>
+                            <p class="wprd">기한: XX.XX.XX - XX.XX.XX</p>
+                            <p class="wmore">바로가기</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="workCom"><img src="image/insertimagehere.png"></div>
+                        <div class="workTxt">
+                            <p class="wnumber">03</p>
+                            <p class="wtitle">제목</p>
+                            <p class="wdesc">설명</p>
+                            <p class="wprd">기한: XX.XX.XX - XX.XX.XX</p>
+                            <p class="wmore">바로가기</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="map" style="height: 800px;"></div>
+    <div id="map_czech">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NXrTICnSK27fFruPpaKYE-g92IhZmZY&ehbc=2E312F"></iframe>
+    </div>
+    <div class="grid4">
+        <div class="article4">
+            <div id="github">
+                <a href="https://github.com/sosugyeong0/portfolio"><img src="image/GitHub.png" width="3%"></a>
+            </div>
+            <br>
+            <br>
+            <span>
+                Copyright(c) SoSuGyeong. All rights reserved.
+            </span>
+        </div>
+    </div>
+    
+<script>
+    var 원인 = tf.tensor(보스톤_원인);
+    var 결과 = tf.tensor(보스톤_결과);
+
+    var X = tf.input({ shape: [12] });
+    var Y = tf.layers.dense({ units: 2 }).apply(X);
+    var model = tf.model({ inputs: X, outputs: Y });
+    var compileParam = { optimizer: tf.train.adam(), loss: tf.losses.meanSquaredError }
+    model.compile(compileParam);
+
+    var fitParam = { 
+        epochs: 100,
+        callbacks:{
+            onEpochEnd:
+              function(epoch, logs){
+                console.log('epoch', epoch, logs, 'RMSE=>', Math.sqrt(logs.loss));
+              }
+        }
+    }
+    model.fit(원인, 결과, fitParam).then(function (result) {
+        var 예측한결과 = model.predict(원인);
+        예측한결과.print();
+    });
+
+</script>
+</body>
 </html>

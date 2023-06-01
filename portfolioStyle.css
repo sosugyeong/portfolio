@@ -1,26 +1,68 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
-    text-decoration-line: none;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+}
+/*공통*/
+.grid0, grid1, grid2, .grid3{
+    /*padding: 100px 0;*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-body {
+.article0, .article1, .article2, .article3, .article4{
+    font-family: 'Poppins', sans-serif;
+}
+.article0 .title, .article1 .title, .article2 .title, .article3 .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 100px 0;
+    padding-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.article0 .title::before, .article1 .title::before, .article3 .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.article2 .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+/*배경색*/
+.grid0{background-color: #1e1e1e;}
+.grid1{background-color: #fff;}
+.grid2{background-color: #1e1e1e;}
+.grid3{background-color: #fff;}
+
+/*body {
     margin: 0px;
     padding-top: 88px;
 }
-
-.saw {
-    color: yellowgreen;
-}
-
-.screen {
-    max-width: 768px;
-}
+*/
 
 .scroll-container{
     scroll-behavior: smooth;
 }
 
-.title_wrap {
+/*.title_wrap {
     box-sizing: initial;
     display: flex;
     justify-content: center;
@@ -36,13 +78,13 @@ body {
     height: max-content;
     font-size: 2em;
     font-weight: 600;
-}
+}*/
 
 header{
     height: 55px;
     padding: 1rem;
     color: white;
-    background: #1C658C;
+    background: #1e1e1e;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -55,7 +97,12 @@ header{
 
 #menu span {
     padding-left: 30px;
+    color: #fff;
 }
+#menu a:visited {
+    color: #fff;
+}
+#menu span.active{color:rgb(213, 230, 255);}
 
 .title_img {
     display: block;
@@ -64,39 +111,61 @@ header{
     padding-left: auto;
 }
 
-#grid {
+.grid0, .grid1, .grid2, .grid3 {
     display: grid;
     scroll-behavior: smooth;
     min-height: 50vh;
+    /*max-width: 1300px;*/
+    padding: 0 20px;
+    margin: auto;
 }
 
-#grid h1 {
-    padding: 30px;
-    padding-bottom: 15px;
-    padding-left: 355px;
+.grid0 .article0{
+    padding-top: 86px;
+    color: #fff;
 }
 
-#grid #article1 {
-    background-color: #EEEE;
+/*article0*/
+
+.grid0 {
+    width: 100%;
+    height: 100%;
+}
+.article0 {
+	background-size: cover;
+    /*padding: 0% 0 50%;*/
+    padding-bottom: 30%;
+    padding-right: 15%;
+}
+
+.article0 .Text {
+	line-height: 1; 
+	font-size: 3em; 
+	font-weight: 100; 
+	text-align: left;
+}
+
+/*article0*/
+
+.grid1 .article1 {
+    background-color: #fff;
     padding-bottom: 45px;
+    padding-top: 86px;
+    max-width: 1300px;
 }
 
-#grid #about_me_table {
-    border: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 700px;
-    font-size: 16pt;
-}
-
-#grid #article2 {
-    background-color: #D8D2CB;
+.grid2 .article2 {
+    background-color: #1e1e1e;
     padding-bottom: 100px;
+    color: #fff;
+    padding-top: 86px;
+    max-width: 1300px;
 }
 
-#grid #article3 {
-    background-color: #F7F5F2;
+.grid3 .article3 {
+    background-color: #fff;
     padding-bottom: 45px;
+    padding-top: 86px;
 }
 
 .skill_box div {
@@ -121,7 +190,8 @@ header{
     border-bottom: 1px solid #ccc;
     font-size: 25px;
     font-weight: 600;
-    color: #1C658C;
+    color: black;
+    /*#1C658C*/
     line-height: 25px;
 }
 .skill_box ul {
@@ -163,7 +233,7 @@ header{
     border-bottom: 1px solid #ccc;
     font-size: 25px;
     font-weight: 600;
-    color: #1C658C;
+    color: black;
     line-height: 25px;
 }
 .skill_box2 ul {
@@ -185,7 +255,8 @@ header{
 
 
 .article3_img{
-    padding-left: 0px;
+    padding-left: 5px;
+    padding-top: 8%;
 }
 
 .project_intro{
@@ -206,20 +277,40 @@ header{
     font-weight: 300;
 }
 
-#grid #article4 {
-    background-color: #398AB9;
+/*map*/
+#map{
+    height: 100%;
+}
+#map_czech{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+#map_czech iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.grid4 .article4 {
+    background-color: #1e1e1e;
     text-align: center;
     padding: 30px;
     padding-top: 60px;
-    font-size: small;
+    font-size: 15px;
     color: white;
 }
-.github img{
+#github img{
     float: center;
+    -webkit-filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
 }
 
 @media(max-width:800px) {
-    #grid {
+    .grid4 {
         display: block;
     }
 
